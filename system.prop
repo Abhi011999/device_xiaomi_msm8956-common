@@ -55,6 +55,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=5
 
+# Codec2 switch
+debug.media.codec2=2
+
 # Dex2oat use 6 cores during bootup dex compilation
 dalvik.vm.boot-dex2oat-threads=6
 
