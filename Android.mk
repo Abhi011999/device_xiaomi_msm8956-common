@@ -32,10 +32,10 @@ include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
-FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware
+FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
 $(FIRMWARE_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating $(FIRMWARE_MOUNT_POINT)"
-	@mkdir -p $(TARGET_OUT_VENDOR)/firmware
+	@mkdir -p $(TARGET_OUT_VENDOR)/firmware_mnt
 
 DSP_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
 $(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
