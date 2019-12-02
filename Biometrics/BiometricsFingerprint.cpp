@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.0-service"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.0-service"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service"
 
 #include <hardware/hw_auth_token.h>
 #include <hardware/hardware.h>
@@ -46,7 +46,7 @@ BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
     char vend [PROPERTY_VALUE_MAX];
-    property_get("ro.boot.fpsensor", vend, NULL);
+    property_get("ro.boot.fpsensor", vend, nullptr);
 
     if (!strcmp(vend, "fpc")) {
         is_goodix = false;
