@@ -159,9 +159,12 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
-		/mnt/vendor/persist:/persist \
-		/vendor/dsp:/dsp \
-		/vendor/firmware_mnt:/firmware
+    /mnt/vendor/persist:/persist
+
+BOARD_ROOT_EXTRA_FOLDERS := \
+    /firmware \
+    /dsp \
+    /cust
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
