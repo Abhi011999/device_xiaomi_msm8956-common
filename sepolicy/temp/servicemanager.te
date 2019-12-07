@@ -1,0 +1,7 @@
+allow servicemanager hal_fingerprint_default:process { getattr };
+allow servicemanager hal_fingerprint_default:dir { search };
+allow servicemanager hal_fingerprint_default:file { r_file_perms };
+
+allow servicemanager goodix:dir search;
+allow servicemanager goodix:file { open read };
+allow servicemanager goodix:process getattr;
