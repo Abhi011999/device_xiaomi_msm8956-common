@@ -3,5 +3,8 @@ type firmware_file, file_type;
 type persist_file, file_type;
 type cust_file, file_type;
 
+# TouchPanel
+type proc_touchpanel, fs_type, sysfs_type, proc_type;
+
 # Goodix
 type goodix_data_file, file_type, data_file_type;
