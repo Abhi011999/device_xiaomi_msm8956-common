@@ -17,10 +17,13 @@
  */
 -->
 <resources>
+    <!-- Set DT2W to false by default -->
     <bool name="def_double_tap_to_wake">false</bool>
-
 
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
 
+    <!-- Set default window animation scales to 50% -->
+    <fraction name="def_window_animation_scale">50%</fraction>
+    <fraction name="def_window_transition_scale">50%</fraction>
 </resources>
